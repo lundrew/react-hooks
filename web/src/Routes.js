@@ -15,6 +15,7 @@ const Routes = () => {
   return (
     <Router>
       <Set wrap={HookLayout}>
+        <Route path="/use-effect" page={UseEffectPage} name="useEffect" />
         <Route path="/use-state" page={UseStatePage} name="useState" />
         <Route path="/use-reducer" page={UseReducerPage} name="useReducer" />
         <Route path="/" page={HomePage} name="home" />

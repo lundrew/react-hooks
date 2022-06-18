@@ -13,6 +13,9 @@ const HookLayout = ({ children }) => {
         <li>
           <Link to={routes.useReducer()}>UseReducer</Link>
         </li>
+        <li>
+          <Link to={routes.useEffect()}>UseEffect</Link>
+        </li>
       </ul>
       {children}
     </>
