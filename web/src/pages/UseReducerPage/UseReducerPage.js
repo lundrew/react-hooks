@@ -43,17 +43,19 @@ const UseReducerPage = () => {
   const [state, dispatch] = useReducer(reducer, { count: 0, showText: true })
   return (
     <div>
-      <h1>UseReducer 1</h1>
-      <h1>{state.count}</h1>
-      <button
-        onClick={() => {
-          dispatch({ type: 'INCREMENT' })
-          dispatch({ type: 'toggleShowText' })
-        }}
-      >
-        Click Heresad
-      </button>
-      {state.showText && <p>This is a Text</p>}
+      <div className="hook-container">
+        <h1>UseReducer 1</h1>
+        <h1>{state.count}</h1>
+        <button
+          onClick={() => {
+            dispatch({ type: 'INCREMENT' })
+            dispatch({ type: 'toggleShowText' })
+          }}
+        >
+          Click Here
+        </button>
+        {state.showText && <p>This is a Text</p>}
+      </div>
     </div>
   )
 }

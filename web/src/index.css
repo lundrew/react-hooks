@@ -1,0 +1,39 @@
+::-webkit-scrollbar {display:none;}
+
+.link-container {
+  display: grid;
+  justify-content: space-evenly;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+
+.link:hover {
+  color: teal;
+}
+
+.home-text {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+li {
+  padding: 1rem;
+}
+
+.line {
+  border:2px solid black;
+
+}
+
+.hook-container {
+  border-bottom:2px solid black;
+  padding-bottom: 1rem;
+}

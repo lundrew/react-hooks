@@ -47,14 +47,14 @@ const UseEffectPage = () => {
   return (
     <>
       <div>
-        <div>
+        <div className="hook-container">
           <h1>UseEffect 1</h1>
           <div>{data}</div>
           {count}
           <button onClick={() => setCount(count + 1)}>Count</button>
         </div>
 
-        <div>
+        <div className="hook-container">
           <h1>UseEffect 2</h1>
           <button onClick={() => setResourceType('posts')}>Posts</button>
           <button onClick={() => setResourceType('users')}>Users</button>
@@ -67,9 +67,10 @@ const UseEffectPage = () => {
           })} */}
         </div>
 
-        <div>
+        <div className="hook-container">
           <h1>UseEffect 3</h1>
           {windowWidth}
+          <p>*Resize Window*</p>
         </div>
       </div>
     </>
